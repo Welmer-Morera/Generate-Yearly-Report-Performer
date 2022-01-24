@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="System1_NavigateTo_MonthlyReport" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="613,647" sap2010:WorkflowViewState.IdRef="System1_NavigateTo_MonthlyReport_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="System1_NavigateTo_UploadYearlyReport" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="706,647" sap2010:WorkflowViewState.IdRef="System1_NavigateTo_UploadYearlyReport_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -25,8 +25,6 @@
       <x:String>System.Collections.ObjectModel</x:String>
       <x:String>System.Activities.DynamicUpdate</x:String>
       <x:String>UiPath.UIAutomationCore.Contracts</x:String>
-      <x:String>System.Runtime.InteropServices</x:String>
-      <x:String>System.Reflection</x:String>
       <x:String>UiPath.UIAutomationNext.Enums</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
@@ -49,18 +47,11 @@
       <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
-      <AssemblyReference>System.Memory</AssemblyReference>
-      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
-      <AssemblyReference>System.ServiceModel</AssemblyReference>
-      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
-      <AssemblyReference>System.ValueTuple</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
-      <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="System1_NavigateTo_MonthlyReport" sap:VirtualizedContainerService.HintSize="476,582" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="System1_NavigateTo_UploadYearlyReport" sap:VirtualizedContainerService.HintSize="476,582" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -90,7 +81,7 @@
                 </ui:CursorPosition>
               </ui:Click.CursorPosition>
               <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9dac0f00-02e9-4a10-965e-085050faf194" InformativeScreenshot="4dd76eb629eb2561e93bce471e629f11" Selector="&lt;webctrl aaname='Reports' parentid='dashmenu' tag='BUTTON' /&gt;">
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="726d3b5f-4e85-4b6b-a9fc-acb182b8e288" InformativeScreenshot="64ded3d96c4e36b853e24bfbf72fc277" Selector="&lt;webctrl aaname='Reports' parentid='dashmenu' tag='BUTTON' /&gt;">
                   <ui:Target.TimeoutMS>
                     <InArgument x:TypeArguments="x:Int32" />
                   </ui:Target.TimeoutMS>
@@ -112,7 +103,7 @@
                 </ui:CursorPosition>
               </ui:Click.CursorPosition>
               <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a5922032-7af7-4667-b2b1-82e019173909" InformativeScreenshot="3481c4ac83b9bda5028f197090296e1a" Selector="&lt;webctrl aaname='Download Monthly Report' parentid='dashmenu' tag='A' /&gt;">
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7367714b-5d25-4956-bd21-83104c848697" InformativeScreenshot="fba6b4594eee1842d8f611b610f5908c" Selector="&lt;webctrl aaname='Upload Yearly Report' parentid='dashmenu' tag='A' /&gt;">
                   <ui:Target.TimeoutMS>
                     <InArgument x:TypeArguments="x:Int32" />
                   </ui:Target.TimeoutMS>
